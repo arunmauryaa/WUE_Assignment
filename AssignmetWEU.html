@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements and Attributes with CSS</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            margin: 20px 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Paragraph styles */
+        p {
+            line-height: 1.6;
+        }
+
+        /* Link styles */
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Image styles */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* List styles */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Form styles */
+        form {
+            margin-top: 20px;
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Elements and Attributes with CSS</h1>
+    </header>
+
+    <!-- Paragraphs -->
+    <section>
+        <h2>Introduction</h2>
+        <p>This is a simple demonstration of various HTML elements such as paragraphs, links, images, lists, tables, and forms with input types. The layout is styled with CSS for better presentation.</p>
+    </section>
+
+    <!-- Links -->
+    <section>
+        <h2>Links</h2>
+        <p>Click here to visit <a href="https://discord.com/channels/@me" target="_blank">Discord</a> Login </p>
+    </section>
+
+    <!-- Images -->
+    <section>
+        <h2>Images</h2>
+        <img src="c:\Users\AT Laptops\Downloads\download (1).jpg" alt="Description of Image" width="100">
+
+        <p>Above is an example of an image embedded using the &lt;img&gt; tag in HTML. The image is responsive and adjusts to the container width.</p>
+    </section>
+
+    <!-- Lists -->
+    <section>
+        <h2>Lists</h2>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn JavaScript</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Cloud Computing</li>
+        </ul>
+    </section>
+
+    <!-- Tables -->
+    <section>
+        <h2>Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Branch</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Arun maurya</td>
+                <td>20</td>
+                <td>B.Tech</td>
+                <td>C S</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Muzahid Ansari</td>
+                <td>22</td>
+                <td>B.Tech</td>
+                <td>C S</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Anshul Gupta</td>
+                <td>20</td>
+                <td>B.Tech</td>
+                <td>C S</td>
+                <td>India</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Forms and Input Types -->
+    <section>
+        <h2>Form</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" placeholder="Enter your age" required>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="up">Uttar Pradesh</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="1" placeholder="Write your message here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
